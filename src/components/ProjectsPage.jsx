@@ -8,14 +8,15 @@ const projects = [
     title: 'Thinky',
     icon: Sparkles,
     year: '2024-2025',
-    domain: 'thinky.sh',
-    url: '',
+    domain: 'deyo.lol',
+    url: 'https://github.com/ZeroCodeZeroBug/thinky.git',
     description: 'AI-powered website builder platform',
     role: ['Front-end', 'Back-end'],
     fullDescription: 'Personal project - an AI-powered website builder similar to vo, loveable, and bolt. Build modern websites with AI assistance, featuring intuitive drag-and-drop interface and real-time collaboration.',
     tech: ['TypeScript', 'React', 'Node.js', 'Vite'],
     category: 'other',
-    gradient: 'from-indigo-500/20 to-cyan-500/20'
+    gradient: 'from-indigo-500/20 to-cyan-500/20',
+    
   },
   {
     id: 2,
