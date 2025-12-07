@@ -23,29 +23,46 @@ const projects = [
     title: 'Reintra',
     icon: TrendingUp,
     year: '2024-2025',
-    domain: 'reintra.ai',
-    url: '',
+    domain: 'deyo.lol',
+    url: 'https://github.com/ZeroCodeZeroBug/reintra',
     description: 'AI agent for real-time stock market learning',
     role: ['Front-end', 'Back-end'],
     fullDescription: 'Personal project - an AI agent that learns the stock market in real-time using charts and technical analysis. Continuously analyzes market patterns, trends, and indicators to make intelligent trading predictions.',
     tech: ['TypeScript', 'React', 'Python', 'TensorFlow'],
     category: 'other',
     gradient: 'from-green-500/20 to-emerald-500/20'
+  },
+  {
+    id: 3,
+    title: 'Radium',
+    icon: Rocket,
+    year: '2024-2025',
+    domain: 'radium.lol',
+    url: 'https://github.com/ZeroCodeZeroBug/radium',
+    description: 'A cool digital card to show off who you are and where to find you online.',
+    role: ['Front-end', 'Back-end'],
+    fullDescription: 'Personal project - A cool digital card to show off who you are and where to find you online.',
+    tech: ['TypeScript', 'React', 'Vite', 'Tailwind CSS'],
+    category: 'other',
+    gradient: 'from-pink-500/20 to-purple-500/20'
+  },
+  {
+    id:4,
+    title: 'PPT Generator',
+    icon: FileText,
+    year: '2024-2025',
+    domain: 'pptgenerator.lol',
+    url: '',
+    description: 'Generate professional presentations with just one prompt',
+    role: ['Front-end', 'Back-end'],
+    fullDescription: 'Personal project - An AI-powered platform that creates complete PowerPoint presentations from a single prompt. Automatically generates slides, designs, layouts, and content tailored to your needs.',
+    tech: ['TypeScript', 'React', 'Node.js', 'OpenAI'],
   }
 ]
 
 const upcomingProjects = [
   {
     id: 1,
-    title: 'PPT Generator',
-    icon: FileText,
-    description: 'Generate professional presentations with just one prompt',
-    fullDescription: 'AI-powered platform that creates complete PowerPoint presentations from a single prompt. Automatically generates slides, designs, layouts, and content tailored to your needs.',
-    tech: ['TypeScript', 'React', 'Node.js', 'OpenAI'],
-    gradient: 'from-orange-500/20 to-red-500/20'
-  },
-  {
-    id: 2,
     title: 'Deploy Platform',
     icon: Rocket,
     description: 'Modern hosting and deployment platform',
