@@ -8,7 +8,7 @@ const projects = [
     title: 'Thinky',
     icon: Sparkles,
     year: '2024-2025',
-    domain: 'deyo.lol',
+    domain: 'no domain yet',
     url: 'https://github.com/ZeroCodeZeroBug/thinky.git',
     description: 'AI-powered website builder platform',
     role: ['Front-end', 'Back-end'],
@@ -23,7 +23,7 @@ const projects = [
     title: 'Reintra',
     icon: TrendingUp,
     year: '2024-2025',
-    domain: 'deyo.lol',
+    domain: 'no domain yet',
     url: 'https://github.com/ZeroCodeZeroBug/reintra',
     description: 'AI agent for real-time stock market learning',
     role: ['Front-end', 'Back-end'],
@@ -37,7 +37,7 @@ const projects = [
     title: 'Radium',
     icon: Rocket,
     year: '2024-2025',
-    domain: 'radium.lol',
+    domain: 'no domain yet',
     url: 'https://github.com/ZeroCodeZeroBug/radium',
     description: 'A cool digital card to show off who you are and where to find you online.',
     role: ['Front-end', 'Back-end'],
@@ -51,7 +51,7 @@ const projects = [
     title: 'PPT Generator',
     icon: FileText,
     year: '2024-2025',
-    domain: 'pptgenerator.lol',
+    domain: 'no domain yet',
     url: '',
     description: 'Generate professional presentations with just one prompt',
     role: ['Front-end', 'Back-end'],
@@ -121,7 +121,7 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className={`relative p-4 sm:p-6 rounded-lg border border-white/10 bg-gradient-to-br ${project.gradient} backdrop-blur-sm hover:border-white/20 transition-all duration-300 group w-full overflow-hidden`}
+                className={`relative p-4 sm:p-6 rounded-lg border border-white/10 bg-gradient-to-br ${project.gradient} backdrop-blur-sm hover:border-white/20 transition-all duration-300 group w-full overflow-hidden flex flex-col h-full`}
               >
                   <div className="flex items-start justify-between mb-4 flex-wrap gap-2">
                     <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
@@ -138,43 +138,47 @@ export default function ProjectsPage() {
                     </span>
                   </div>
 
-                  <p className="text-sm sm:text-base text-gray-300 mb-3 break-words">{project.description}</p>
+                  <div className="flex-1">
+                    <p className="text-sm sm:text-base text-gray-300 mb-3 break-words">{project.description}</p>
 
-                  <div className="flex items-center gap-2 mb-3 flex-wrap">
-                    {project.role.map((r, idx) => (
-                      <span key={idx} className="flex items-center gap-1 text-xs text-gray-400 whitespace-nowrap">
-                        {r === 'Front-end' ? (
-                          <Sparkles className="w-3 h-3 flex-shrink-0" />
-                        ) : (
-                          <Server className="w-3 h-3 flex-shrink-0" />
-                        )}
-                        {r}
-                      </span>
-                    ))}
+                    <div className="flex items-center gap-2 mb-3 flex-wrap">
+                      {project.role.map((r, idx) => (
+                        <span key={idx} className="flex items-center gap-1 text-xs text-gray-400 whitespace-nowrap">
+                          {r === 'Front-end' ? (
+                            <Sparkles className="w-3 h-3 flex-shrink-0" />
+                          ) : (
+                            <Server className="w-3 h-3 flex-shrink-0" />
+                          )}
+                          {r}
+                        </span>
+                      ))}
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-gray-400 leading-relaxed break-words">{project.fullDescription}</p>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-gray-400 mb-4 leading-relaxed break-words">{project.fullDescription}</p>
+                  <div className="mt-4 space-y-4">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      {project.tech.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-1 rounded text-xs bg-white/5 border border-white/10 whitespace-nowrap"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
 
-                  <div className="flex items-center gap-2 mb-4 flex-wrap">
-                    {project.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 rounded text-xs bg-white/5 border border-white/10 whitespace-nowrap"
-                      >
-                        {tech}
+                    <button 
+                      onClick={() => handleViewClick(project)}
+                      className="flex items-center gap-2 text-xs sm:text-sm hover:text-white transition-all duration-300 group-hover:translate-x-1 w-full sm:w-auto"
+                    >
+                      <span className="transition-all duration-300 whitespace-nowrap">
+                        {showMessage[project.id] ? "Sorry brah, the project isn't opensource or not hosted yet" : "View"}
                       </span>
-                    ))}
+                      {!showMessage[project.id] && <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transition-opacity duration-300 flex-shrink-0" />}
+                    </button>
                   </div>
-
-                  <button 
-                    onClick={() => handleViewClick(project)}
-                    className="flex items-center gap-2 text-xs sm:text-sm hover:text-white transition-all duration-300 group-hover:translate-x-1 w-full sm:w-auto"
-                  >
-                    <span className="transition-all duration-300 break-words">
-                      {showMessage[project.id] ? "Sorry brah, the project isn't opensource or not hosted yet (no money)" : "View"}
-                    </span>
-                    {!showMessage[project.id] && <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 transition-opacity duration-300 flex-shrink-0" />}
-                  </button>
                 </div>
             ))}
           </div>
