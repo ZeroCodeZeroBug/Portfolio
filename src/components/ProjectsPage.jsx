@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Server, ArrowRight, Sparkles, TrendingUp, Clock, FileText, Rocket } from 'lucide-react'
+import { Server, ArrowRight, Sparkles, TrendingUp, Clock, FileText, Rocket, Gamepad2 } from 'lucide-react'
 import projectsBg from '../assets/projectsbg.jpg'
 
 const projects = [
@@ -57,6 +57,20 @@ const projects = [
     role: ['Front-end', 'Back-end'],
     fullDescription: 'Personal project - An AI-powered platform that creates complete PowerPoint presentations from a single prompt. Automatically generates slides, designs, layouts, and content tailored to your needs.',
     tech: ['TypeScript', 'React', 'Node.js', 'OpenAI'],
+  },
+  {
+    id: 5,
+    title: 'Ranked Bedwars V2',
+    icon: Gamepad2,
+    year: '2024-2025',
+    domain: 'no domain yet',
+    url: 'https://github.com/deyoyk/RankedBedwarsV2',
+    description: 'Advanced ranked Bedwars system with Discord integration',
+    role: ['Back-end', 'DevOps'],
+    fullDescription: 'Most advanced publicly available ranked Bedwars system. Features ELO-based matchmaking, party system, screenshare functionality, and real-time communication between Discord and Minecraft. Supports both Bedwars1058 and MBedwars plugins with secure WebSocket communication.',
+    tech: ['Node.js', 'MongoDB', 'Discord.js', 'Java', 'WebSocket'],
+    category: 'other',
+    gradient: 'from-orange-500/20 to-red-500/20'
   }
 ]
 
