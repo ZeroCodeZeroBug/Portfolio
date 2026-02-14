@@ -6,7 +6,7 @@ import aboutMeBg from '../assets/aboutmebg.jpg'
 import GithubContributionGraph from './GithubContributionGraph'
 import ScrambleText from './ScrambleText'
 import { 
-  SiJavascript, SiTypescript, SiReact, SiPython, SiGo, SiPhp, 
+  SiJavascript, SiTypescript, SiReact, SiPython, SiPhp,
   SiCplusplus, SiRuby, SiRust, SiSwift, SiKotlin,
   SiHtml5, SiCss3, SiVuedotjs, SiNodedotjs, SiDocker, SiMongodb, SiPostgresql,
   SiMysql, SiRedis, SiGit, SiMarkdown, SiJson, SiYaml, SiXml, SiGraphql,
@@ -47,8 +47,6 @@ const getLanguageIcon = (language) => {
     
     'python': SiPython,
     'java': Code,
-    'go': SiGo,
-    'golang': SiGo,
     'php': SiPhp,
     'ruby': SiRuby,
     'rust': SiRust,
