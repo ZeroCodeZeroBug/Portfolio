@@ -1,6 +1,6 @@
 import { 
   Wrench, Lightbulb, Server, Link2, Globe, Palette, FileCode, Circle, 
-  Zap, Target, Database, Box, Settings, Github
+  Zap, Star, Target, Database, Box, Settings, Github
 } from 'lucide-react'
 import skillsetBg from '../assets/skillsetbg.jpg'
 
