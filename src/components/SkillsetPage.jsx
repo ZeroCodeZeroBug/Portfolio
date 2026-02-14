@@ -1,6 +1,6 @@
 import { 
   Wrench, Lightbulb, Server, Link2, Globe, Palette, FileCode, Circle, 
-  Zap, Star, Target, Database, Moon, Box, Settings, Github
+  Zap, Target, Database, Box, Settings, Github
 } from 'lucide-react'
 import skillsetBg from '../assets/skillsetbg.jpg'
 
@@ -16,7 +16,6 @@ const skills = {
       { name: 'React', icon: Circle, color: 'from-cyan-500/20 to-cyan-600/20 border-cyan-500/30' },
       { name: 'Vue', icon: Circle, color: 'from-green-500/20 to-green-600/20 border-green-500/30' },
       { name: 'Nuxt', icon: Zap, color: 'from-green-500/20 to-green-600/20 border-green-500/30' },
-      { name: 'Astro', icon: Star, color: 'from-purple-500/20 to-purple-600/20 border-purple-500/30' },
       { name: 'Tailwind', icon: Target, color: 'from-cyan-500/20 to-cyan-600/20 border-cyan-500/30' }
     ],
     keyIcons: [FileCode, Circle, Zap]
@@ -29,7 +28,6 @@ const skills = {
       { name: 'TypeScript', icon: FileCode, color: 'from-blue-500/20 to-blue-600/20 border-blue-500/30' },
       { name: 'Python', icon: FileCode, color: 'from-yellow-500/20 to-yellow-600/20 border-yellow-500/30' },
       { name: 'Java', icon: FileCode, color: 'from-orange-500/20 to-orange-600/20 border-orange-500/30' },
-      { name: 'Golang', icon: FileCode, color: 'from-cyan-500/20 to-cyan-600/20 border-cyan-500/30' },
       { name: 'Bun', icon: Circle, color: 'from-yellow-500/20 to-yellow-600/20 border-yellow-500/30' },
       { name: 'Node', icon: Circle, color: 'from-green-500/20 to-green-600/20 border-green-500/30' },
       { name: 'Express', icon: Zap, color: 'from-gray-500/20 to-gray-600/20 border-gray-500/30' },
@@ -37,10 +35,7 @@ const skills = {
       { name: 'MERN Stack', icon: Star, color: 'from-indigo-500/20 to-indigo-600/20 border-indigo-500/30' },
       { name: 'Firebase', icon: Zap, color: 'from-orange-500/20 to-orange-600/20 border-orange-500/30' },
       { name: 'PostgreSQL', icon: Database, color: 'from-blue-500/20 to-blue-600/20 border-blue-500/30' },
-      { name: 'Redis', icon: Database, color: 'from-red-500/20 to-red-600/20 border-red-500/30' },
-      { name: 'Prisma ORM', icon: Box, color: 'from-indigo-500/20 to-indigo-600/20 border-indigo-500/30' },
-      { name: 'Fastify', icon: Zap, color: 'from-yellow-500/20 to-yellow-600/20 border-yellow-500/30' },
-      { name: 'Elysia', icon: Moon, color: 'from-purple-500/20 to-purple-600/20 border-purple-500/30' }
+      { name: 'Redis', icon: Database, color: 'from-red-500/20 to-red-600/20 border-red-500/30' }
     ],
     keyIcons: [FileCode, Circle, Zap]
   },
@@ -54,9 +49,7 @@ const skills = {
       { name: 'AWS', icon: Server, color: 'from-orange-500/20 to-orange-600/20 border-orange-500/30' },
       { name: 'Azure', icon: Server, color: 'from-blue-500/20 to-blue-600/20 border-blue-500/30' },
       { name: 'GCP', icon: Server, color: 'from-red-500/20 to-red-600/20 border-red-500/30' },
-      { name: 'Nginx', icon: Server, color: 'from-green-500/20 to-green-600/20 border-green-500/30' },
-      { name: 'Caddy', icon: Box, color: 'from-purple-500/20 to-purple-600/20 border-purple-500/30' },
-      { name: 'PM2', icon: Settings, color: 'from-orange-500/20 to-orange-600/20 border-orange-500/30' }
+      { name: 'Nginx', icon: Server, color: 'from-green-500/20 to-green-600/20 border-green-500/30' }
     ],
     keyIcons: [Box, Github, Settings]
   }
@@ -83,8 +76,8 @@ export default function SkillsetPage() {
           </div>
           
           <p className="text-sm xs:text-base sm:text-lg text-gray-300 max-w-3xl leading-relaxed break-words">
-            I build fast, reliable, and scalable web platforms. My frontend stack centers on TypeScript, Vue, and Nuxt, 
-            while I use TypeScript with Bun on the backend and experiment with Go. I'm experienced in CI/CD, containerization, 
+I build fast, reliable, and scalable web platforms. My frontend stack centers on TypeScript, Vue, and Nuxt, 
+            while I use TypeScript with Bun on the backend. I'm experienced in CI/CD, containerization,
             and modern deployment, aiming for efficient, maintainable infrastructure.
             <Wrench className="inline-block w-3 h-3 xs:w-4 xs:h-4 ml-2" />
           </p>
