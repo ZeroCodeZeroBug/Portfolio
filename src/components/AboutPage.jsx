@@ -286,7 +286,7 @@ export default function AboutPage() {
   }, [])
 
   const telegramUrl = 'https://t.me/zxcvypkl'
-  const steamUrl = 'https://steamcommunity.com/id/JudyDeyo'
+  const steamUrl = 'https://steamcommunity.com/id/deyo77'
   const spotifyUrl = 'https://open.spotify.com/user/31or5kmmjigkn65glaz74rcydade?si=47bebac3d2824a9a'
 
   return (
