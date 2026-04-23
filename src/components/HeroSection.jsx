@@ -36,16 +36,16 @@ export default function HeroSection() {
             Hi, I'm{" "}
           </span>
           <span className="bg-gradient-to-r from-orange-200 via-orange-100 to-white bg-clip-text text-transparent">
-            Deyo Dyalan
+            Deyo
           </span>
           <span className="text-white">.</span>
         </h1>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 leading-tight">
-          <span className="text-gray-400">(aka Karthik)</span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2 sm:mb-3 leading-tight">
+          <span className="text-gray-400 text-2xl">aka Karthik</span>
         </h2>
 
-        <p className="text-sm xs:text-base sm:text-lg md:text-xl text-gray-300 mb-4 sm:mb-6 max-w-3xl mx-auto leading-relaxed px-1 sm:px-2 break-words">
+        <p className="text-sm xs:text-base sm:text-lg md:text-xl text-gray-300 mb-2 sm:mb-3 max-w-3xl mx-auto leading-tight px-1 sm:px-2 break-words">
           CS major studying in{" "}
           <span className="text-green-400 font-semibold">
             Chennai, Tamil Nadu, India
@@ -53,7 +53,7 @@ export default function HeroSection() {
           with <span className="text-blue-400 font-semibold">AI/ML</span>{" "}
           specialization.
         </p>
-        <p className="text-xs xs:text-sm sm:text-base md:text-lg text-gray-400 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-1 sm:px-2 break-words">
+        <p className="text-xs xs:text-sm sm:text-base md:text-lg text-gray-400 mb-4 sm:mb-6 max-w-3xl mx-auto leading-tight px-1 sm:px-2 break-words">
           Fullstack developer building fast, reliable web platforms.
           <br />
           I like purple color and Messi is the goat.
