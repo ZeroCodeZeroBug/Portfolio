@@ -3,8 +3,8 @@ import { X, Mail, Send, Copy } from 'lucide-react'
 export default function ContactDialog({ isOpen, onClose }) {
   if (!isOpen) return null
 
-  const email = 'hey@deyo.lol'
-  const telegramUrl = 'https://t.me/deyodyalan'
+  const email = 'karthik.connect77@gmail.com'
+  const telegramUrl = 'https://t.me/zxcvypkl'
 
   const handleEmailClick = () => {
     const mailtoLink = `mailto:${email}`
@@ -65,7 +65,7 @@ export default function ContactDialog({ isOpen, onClose }) {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="text-xs text-gray-400 mb-1 uppercase tracking-wide">Telegram</div>
-                <div className="text-sm sm:text-base text-white font-medium break-words">@deyodyalan</div>
+                <div className="text-sm sm:text-base text-white font-medium break-words">@zxcvypkl</div>
               </div>
             </button>
 

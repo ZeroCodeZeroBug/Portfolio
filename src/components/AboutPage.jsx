@@ -285,7 +285,7 @@ export default function AboutPage() {
     }
   }, [])
 
-  const telegramUrl = 'https://t.me/deyodyalan'
+  const telegramUrl = 'https://t.me/zxcvypkl'
   const steamUrl = 'https://steamcommunity.com/id/JudyDeyo'
   const spotifyUrl = 'https://open.spotify.com/user/31or5kmmjigkn65glaz74rcydade?si=47bebac3d2824a9a'
 
@@ -326,7 +326,7 @@ export default function AboutPage() {
               goal is to make the web a better and more beautiful place.
             </ScrambleText>
             <div className="w-full sm:w-48 sm:h-48 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 rounded-lg border-2 border-white/20 flex items-center justify-center flex-shrink-0 overflow-hidden mx-auto sm:mx-0 sm:ml-6 md:ml-8 mt-2 sm:-mt-6">
-              <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+              <img src={profileImage} alt="Profile" className="w-full h-full object-cover" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
